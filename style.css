@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.blue {
+    color: rgb(120, 120, 253);
+}
+
+.red {
+    color: rgb(247, 120, 120);
+}
+
+.header-logo {
+    float: left;
+    padding: auto;
+    font-size: 50px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background:black;
+    height: 90px;
+    margin: auto;
+
+}
+
+.nav-list {
+    float: right;
+    font-size: 30px;
+}
+
+.nav-list li{
+    float: left;
+    padding: 10px 20px;
+    color: wheat;
+    font-family: 'Crimson Text', serif;
+    list-style: none;
+    font-size: 50px;
+}
+
+.main-image {
+    max-width: 100;
+}
+
+body {
+    margin: auto;
+}
+
+.table {
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+
+.main {
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 30px;
+    /* background-color: blueviolet; */
+    flex-direction: row-reverse;
+    
+    padding: 0px 64px;
+}
+
+
+.main h1 {
+    color: rgb(255, 220, 66);
+    /* background-color: antiquewhite; */
+    padding-top: 40px;
+}
+
+.main-consept {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.main-menu {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 32px dotted rgb(255, 56, 56);
+}
+
+.main-accsess {
+    padding-bottom: 40px;
+    display: flex;
+    border-top: 32px dotted rgb(255, 56, 56);
+}
+
+.main-contact {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-top: 32px dotted rgb(255, 56, 56);
+}
+
+.consept-image {
+    width: 480px;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.menu-image {
+    width: 480px;
+    padding-right: 60px;
+    padding-top: 60px;
+}
+
+.contact-image {
+    width: 480px;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.accsess-image {
+    width: 480px;
+    padding-right: 60px;
+    padding-top: 60px;
+}
+
+.main p {
+    /* background-color: chartreuse; */
+    padding: 160px 160px;
+}
+
+.main-consept h1 {
+    padding-left: 60px;
+}
