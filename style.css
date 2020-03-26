@@ -20,10 +20,10 @@
 }
 
 header {
-    background:black;
+    background:rgb(0,0,0,0.5);
     height: 90px;
-    margin: auto;
-
+    position: fixed;
+    width: 100%;
 }
 
 .nav-list {
@@ -40,8 +40,12 @@ header {
     font-size: 50px;
 }
 
+a:visited {
+    color: wheat;
+}
+
 .main-image {
-    max-width: 100;
+    width: 100%;
 }
 
 body {
@@ -50,7 +54,7 @@ body {
 
 .table {
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(255, 220, 66);
     padding-bottom: 8px;
 }
 
@@ -59,7 +63,6 @@ body {
     font-size: 30px;
     /* background-color: blueviolet; */
     flex-direction: row-reverse;
-    
     padding: 0px 64px;
 }
 
@@ -67,12 +70,14 @@ body {
 .main h1 {
     color: rgb(255, 220, 66);
     /* background-color: antiquewhite; */
-    padding-top: 40px;
+    width: 10px;
+    height: 10px;
 }
 
 .main-consept {
     display: flex;
     padding-bottom: 40px;
+    border-top: 32px dotted rgb(255, 56, 56);
 }
 
 .main-menu {
@@ -80,6 +85,10 @@ body {
     display: flex;
     flex-direction: row-reverse;
     border-top: 32px dotted rgb(255, 56, 56);
+}
+
+.main-menu h1 {
+    padding-right: 140px;
 }
 
 .main-accsess {
@@ -91,11 +100,10 @@ body {
 .main-contact {
     padding-bottom: 40px;
     display: flex;
-    flex-direction: row-reverse;
     border-top: 32px dotted rgb(255, 56, 56);
 }
 
-.consept-image {
+#mypic {
     width: 480px;
     padding-left: 60px;
     padding-top: 60px;
@@ -107,15 +115,9 @@ body {
     padding-top: 60px;
 }
 
-.contact-image {
-    width: 480px;
-    padding-left: 60px;
-    padding-top: 60px;
-}
-
 .accsess-image {
     width: 480px;
-    padding-right: 60px;
+    padding-left: 60px;
     padding-top: 60px;
 }
 
@@ -124,6 +126,58 @@ body {
     padding: 160px 160px;
 }
 
-.main-consept h1 {
-    padding-left: 60px;
+@media (max-width: 1400px) {
+    .header-logo {
+        font-size: 6vw;
+    }
+
+    .main {
+        text-align: center;
+        padding: 0 140px;
+    }
+    
+    .nav-list {
+        display: none;
+    }
+
+    .main-consept {
+        flex-direction: column;
+
+    }
+    
+    .main-menu {
+        height: 300px;
+        flex-direction: column;
+    }
+    
+    .main-accsess {
+        flex-direction: column;
+        
+    }
+    
+    .main-contact {
+        flex-direction: column;
+    }
+
+    .main p  {
+        padding: 0px;
+    }
+
+    #mypic {
+        display: none;
+    }
+
+    .menu-image {
+        display: none;
+    }
+
+    .accsess-image {
+        display: none;
+    }
+
+    @media (max-width: 375px) {
+        .header-logo {
+            font-size: 6vw;
+        }
+    }
 }
