@@ -126,6 +126,12 @@ body {
     padding: 160px 160px;
 }
 
+footer {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
 @media (max-width: 1400px) {
     .header-logo {
         font-size: 6vw;
@@ -159,8 +165,13 @@ body {
         flex-direction: column;
     }
 
+    .main h1 {
+        height: 16px;
+    }
+
     .main p  {
         padding: 0px;
+        padding-top: 48px;
     }
 
     #mypic {
