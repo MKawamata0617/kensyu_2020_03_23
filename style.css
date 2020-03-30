@@ -101,6 +101,11 @@ body {
     padding-bottom: 40px;
     display: flex;
     border-top: 32px dotted rgb(255, 56, 56);
+    flex-direction: row-reverse;
+}
+
+.main-contact h1 {
+    padding-right: 240px;
 }
 
 #mypic {
@@ -183,7 +188,8 @@ footer {
     }
 
     .accsess-image {
-        display: none;
+        /* display: none; */
+        padding-left: 0px;
     }
 
     @media (max-width: 375px) {
