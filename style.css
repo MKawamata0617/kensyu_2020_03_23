@@ -26,12 +26,12 @@ header {
     width: 100%;
 }
 
-.nav-list {
+.nav {
     float: right;
     font-size: 30px;
 }
 
-.nav-list li{
+.nav li{
     float: left;
     padding: 10px 20px;
     color: wheat;
@@ -191,6 +191,143 @@ footer {
         /* display: none; */
         padding-left: 0px;
     }
+
+.nav{
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: black;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    text-align: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: block;
+    height: calc(100vh/5);
+    line-height: 130px;
+    list-style-type: none;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+
+.nav a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    text-shadow: initial;
+    margin: 0 15px;
+
+}
+
+nav ul a::before,
+nav ul a::after{
+    border-bottom: initial;
+    bottom: initial;
+    content: initial;
+    display: initial;
+    transition: initial;
+    -webkit-transition: initial;
+    width: initial;
+    position: initial;
+}
+
+nav ul a::before {
+    left: initial;
+}
+
+nav ul a::after {
+    right: initial;
+}
+
+nav ul a:hover::before,
+nav ul a:hover::after {
+    width: initial;
+} 
+
+#target {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    display: block;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.target_inner{
+    width: 30px;
+    height: 30px;
+}
+
+.target_inner_line {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: black;
+    -webkit-transition: 1s;
+    transition: 1s;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.target_inner_1 {
+    top: 3px;
+    width: 30px;
+}
+
+.target_inner_2 {
+    top: 13px;
+    width: 30px;
+}
+
+.target_inner_3 {
+    top: 23px;
+    width: 30px;
+}
+.fadein{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.linea,.lineb,.linec{
+    background: #882a04;
+    color: white;
+}
+
+.linea {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    top: 13px;
+}
+
+.lineb {
+    opacity: 0;
+}
+
+.linec {
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+    top: 13px;
+}
+
+.header-logo {
+    display: none;
+}
+
+.container h1 {
+    font-size: 36px;
+}
 
     @media (max-width: 375px) {
         .header-logo {
