@@ -142,12 +142,17 @@ footer {
         font-size: 6vw;
     }
 
-    .main {
-        text-align: center;
-        padding: 0 140px;
+    header {
+        background-color: #fff;
     }
-    
-    .nav-list {
+
+    .main {
+        padding: 0 340px;
+        max-width: 100%;
+        padding-top: 230px;
+    }
+
+    .main-image {
         display: none;
     }
 
@@ -163,7 +168,7 @@ footer {
     
     .main-accsess {
         flex-direction: column;
-        
+        padding-top: 420px;
     }
     
     .main-contact {
